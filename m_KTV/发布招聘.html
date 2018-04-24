@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>发布招聘</title>
+  <link href="./css/amazeui.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/master.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/release.css" rel="stylesheet" type="text/css">
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="yuerso_main">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-01">
+        <a href="#"><img src="./images/logo.png" /></a>
+        <div class="am-form-group">
+          <select id="doc-select-1">
+            <option value="option1">武汉</option>
+            <option value="option2">杭州</option>
+            <option value="option3">南京</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <div class="clear"></div>
+    <div class="wrap">
+      <div class="ktv-jobs">
+        <div class="ktv-jobs-content">
+          <form class="am-form am-form-horizontal">
+            <fieldset>
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>公司名称</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入公司名称">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>性别要求</label>
+                <div class="am-u-sm-9">
+                  <label class="am-radio-inline">
+                    <input type="radio" name="gender" checked> 不限
+                  </label>
+                  <label class="am-radio-inline">
+                    <input type="radio" name="gender"> 男
+                  </label>
+                  <label class="am-radio-inline">
+                    <input type="radio" name="gender"> 女
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>职位性质</label>
+                <div class="am-u-sm-9">
+                  <label class="am-radio-inline">
+                    <input type="radio" name="position" checked> 全职
+                  </label>
+                  <label class="am-radio-inline">
+                    <input type="radio" name="position"> 兼职
+                  </label>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>公司别称</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入公司别称">
+                </div>
+              </div>  
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>所属行业</label>
+                <div class="am-u-sm-9">
+                  <select id="doc-select-1">
+                    <option value="请选择">请选择</option>
+                    <option value="机械">机械</option>
+                    <option value="计算机">计算机</option>
+                    <option value="医疗">医疗</option>
+                    <option value="服务">服务</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+              </div>  
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>公司性质</label>
+                <div class="am-u-sm-9">
+                  <select id="doc-select-1">
+                    <option value="请选择">请选择</option>
+                    <option value="国有企业">国有企业</option>
+                    <option value="民营私企">民营私企</option>
+                    <option value="国私合营">国私合营</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+              </div>  
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>公司规模</label>
+                <div class="am-u-sm-9">
+                  <select id="doc-select-1">
+                    <option value="请选择">请选择</option>
+                    <option value="1-20">1-20</option>
+                    <option value="20-40">20-40</option>
+                    <option value="40-100">40-100</option>
+                    <option value="100以上">100以上</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+              </div>  
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>公司简介</label>
+                <div class="am-u-sm-9">
+                  <textarea class="" rows="8" id="doc-ta-1" placeholder="请简单介绍您的公司信息，让求职者了解您的公司，提高招聘效率，如：公司的主要业务、经营范围、公司规模、公司性质、成立时间。"></textarea>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>联系人</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入联系人">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>招聘电话</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入招聘电话">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label">&nbsp;&nbsp;&nbsp;招聘邮箱</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入招聘邮箱">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label">&nbsp;&nbsp;&nbsp;公司官网</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入公司官网">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>详细地址</label>
+                <div class="am-u-sm-9">
+                  <input id="suggestId" type="text" id="doc-ipt-2" placeholder="请输入详细地址">
+                </div>
+                <div class="am-u-sm-5">
+                </div>
+              </div>
+
+              <br/>
+
+              <p><button type="button" class="am-btn am-btn-primary am-btn-block">发布</button></p>
+
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="clear"></div>
+        <p>版权所有：武汉浩冉文化传播有限公司</p>
+        <p>@CopyRight 2018 鄂 ICP 备 15004710 号-1</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="./js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/amazeui.widgets.helper.min.js"></script>
+  <script src="./js/handlebars.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

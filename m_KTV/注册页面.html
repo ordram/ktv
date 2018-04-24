@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册页面</title>
+  <link href="./css/amazeui.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/master.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/login.css" rel="stylesheet" type="text/css">
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="yuerso_main">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-01">
+        <a href="#"><img src="./images/logo.png" /></a>
+        <div class="am-form-group">
+          <select id="doc-select-1">
+            <option value="option1">武汉</option>
+            <option value="option2">杭州</option>
+            <option value="option3">南京</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+      <div class="header-02">
+        <form class="am-form-inline" role="form">
+          <div class="am-form-group">
+            <!-- <input type="search" class="am-form-field" placeholder="搜索"> -->
+            <!-- <button type="submit" class="am-btn am-btn-default">搜索</button> -->
+          </div>
+        </form>
+      </div>
+      <div class="header-03">
+        <ul>
+          <li>
+            <a href="#">发布</a>
+          </li>
+          <li>
+            <e>|</e>
+          </li>
+          <li>
+            <a href="#">登陆</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <!-- 主体内容 -->
+    <div class="clear"></div>
+    <div class="wrap">
+
+      <div class="login">
+        <div class="login-title">
+          <img src="./images/title_bg.png" />
+          <h3>用户注册</h3>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-8 am-u-sm-centered">
+            <form class="am-form">
+              <fieldset class="am-form-set">
+                <div class="am-form-group am-form-icon">
+                  <i class="am-icon-tablet"></i>
+                  <input type="text" placeholder="请输入账号/邮箱/手机号">
+                  <button type="button" class="am-btn am-btn-default">获取验证码</button>
+                </div>
+                <div class="am-form-group am-form-icon">
+                  <i class="am-icon-exclamation-circle"></i>
+                  <input type="text" placeholder="请输入手机验证码">
+                </div>
+                <div class="am-form-group am-form-icon">
+                  <i class="am-icon-lock"></i>
+                  <input type="text" placeholder="请输入密码">
+                </div>
+              </fieldset>
+              <div class="am-radio">
+                <label>
+                  <input type="radio" name="doc-radio-1" value="option1" checked>
+                  我已阅读并接受<a href="#">《夜场招聘网服务条款》</a>
+                </label>
+              </div>
+              <button type="submit" class="am-btn am-btn-primary am-btn-block">立即注册</button>
+              <div class="am-cf">
+                <a href="#" class="am-fl">帮助</a>
+                <a href="#" class=" am-fr">已有账号？<e>登录</e></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="clear"></div>
+        <p>版权所有：武汉浩冉文化传播有限公司</p>
+        <p>@CopyRight 2018 鄂 ICP 备 15004710 号-1</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="./js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/amazeui.widgets.helper.min.js"></script>
+  <script src="./js/handlebars.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

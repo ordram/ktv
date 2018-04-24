@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 主要样式 */
+.wrap { width: 1200px; margin: 0 auto; height: auto; overflow: hidden; }
+
+
+/* 城市分站 */
+.Urban { width: 100%; height: auto; background-color:#efefef; }
+.Urban .Urban-bg { width: 100%; height: auto; background: url(../images/Urban-sub.jpg); background-size: cover; height: 700px; position: relative; }
+.Urban .Urban-bg header div.header-02 { width: 100%; }
+.Urban .Urban-bg header div.header-02 form { margin: 0; position: absolute; left: 50%; margin-left: -234px; top: 50%; margin-top: -80px; }
+.Urban .Urban-bg header div.header-02 form > p { font-size: 16px; margin-top: 10px; color: #333333; }
+.Urban .Urban-bg header div.header-02 form > p > a { margin-right: 10px; }
+
+.Urban .Urban-l { width: 930px; margin-right: 20px; padding:20px 0 30px 0; float: left; background-color: #fff; border-left: 1px solid #c5c5c5; border-right: 1px solid #c5c5c5;  }
+.Urban .Urban-l .Urban-l-box { width: 100%; padding: 20px 20px 0; overflow: hidden; }
+.Urban .Urban-l .Urban-l-box > h3 { font-size: 18px; margin: 15px 0; }
+.Urban .Urban-l .Urban-l-box > .city-box .city { width: 60px; float: left; line-height: 35px; height: 35px; }
+.Urban .Urban-l .Urban-l-box > .city-box .city h3 { font-size: 16px; color: #00b8f5; display: inline-block; }
+.Urban .Urban-l .Urban-l-box > .city-box ul { width: 100%; height: auto; overflow: hidden; width: 828px; line-height: 35px; }
+.Urban .Urban-l .Urban-l-box > .city-box ul li { font-size: 16px; float: left; margin-right: 10px; }
+
+
+.Urban .Urban-r { width: 250px; float: right; }
+.Urban .Urban-r .income { width: 100%; }
+.Urban .Urban-r .income img { max-width: 100%; margin-bottom: 20px; }
+
+
+
+/* 公共样式 */
+.padtb0 { padding-top: 0 !important; padding-bottom: 0 !important; }

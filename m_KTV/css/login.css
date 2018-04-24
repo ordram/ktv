@@ -1,0 +1,29 @@
+/* 登录注册页面 */
+
+.login { width: 100%; height: auto; }
+.login .login-title { width: 100%; position: relative; }
+.login .am-u-sm-centered { padding: 0; }
+.login .login-title img { width: 100%; }
+.login .login-title h3 { position: absolute; left: 50%; top: 50%; color: #00b5f7; font-size: 17px; margin-top: -13.5px; margin-left: -34px; font-weight: 400; }
+.login .am-form .am-form-group { margin: 0; }
+.login .am-form > button { background-color: #14a8f5; border-color: #14a8f5; border-radius: 3px; }
+.login .am-form .am-form-group input { border-color: #dcdcdc; padding:15px 100px 15px 35px; font-size: 14px; }
+.login .am-form .am-form-group i { font-size: 20px; color: #338bbe; }
+.login .am-form .am-form-group:nth-child(2) i { font-size: 18px; }
+.login .am-form .am-form-group button { position: absolute; right: 8px; top: 10px; font-size: 12px; }
+.login .am-form .am-radio { font-size: 12px; margin-bottom: 25px; }
+.login .am-form .am-radio a { color: #00b5f7; }
+.login .am-form .am-cf { margin-top: 15px; }
+.login .am-form .am-cf e { color: #00b5f7; }
+.login .am-form .am-cf .am-checkbox { margin: 0; font-size: 12px; }
+.login .am-form > button.am-login { margin-top: 25px; }
+
+/* 社交账号模态框 */
+.Social { width: 100%; height: auto; padding: 20px 10px; overflow: hidden; position: fixed; left: 0; bottom: -200px; background-color: rgba(0,0,0,0.5); }
+.Social ul { width: 100%; height: auto; overflow: hidden; }
+.Social ul li { width: 33.3%; text-align: center; float: left;  }
+
+/* 底部颜色 */
+.footer { background-color: #fff; margin-top: 30px; }
+.footer p { color: #999; }
+.footer .footer-list ul li a { color: #999; }

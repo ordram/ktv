@@ -1,0 +1,85 @@
+/* 搜索列表页 */
+.marTop30 { margin-top: 30px; }
+.marBot0 { margin-bottom: 0; }
+
+
+/* 搜索页 */
+.search-s { width: 100%; display: flex; padding: 10px; background-color: #eaeaea; }
+.search-s input { padding: 5px; font-size: 12px; border-radius: 3px; }
+.search-s button { padding: 5px 10px; background-color: transparent; color: #00b8f5; font-size: 15px; }
+
+.search-r { width: 100%; overflow: hidden; }
+.search-r p { width: 100%; font-size: 14px; color: #a8a8a8; margin: 15px 0 9px 0; }
+.search-r ul { width: 100%; overflow: hidden; height: auto; }
+.search-r ul li { padding: 3px 6px; border: 1px solid #ccc; float: left; margin: 0 10px 10px 0; }
+.search-r ul li a { color: #a8a8a8; font-size: 12px; }
+
+
+/* 搜索列表页 */
+.search-box { width: 100%; margin-top: 10px; overflow: hidden; }
+.search-box .search-box-l { width: 70%; float: left; padding-right: 15px; }
+.search-box .search-title { font-size: 14px; margin-bottom: 15px; }
+.search-box .search-title ul { width: 100%; height: auto; overflow: hidden;  }
+.search-box .search-title ul li { float: left; padding-right: 7%; font-size: 14px; }
+.search-box .search-title ul li:last-child { padding-right: 0; }
+.search-box .search-title h3 { color: #00b8f5; font-size: 16px; }
+
+.search-box .search-title ul li select { border: none; max-width: 70px; }
+.search-box .search-select ul li { width: 25%; text-align: center; }
+
+
+/* .search-box .search-box-ls { width: 100%; background-color: #f3f3f3; padding: 20px; overflow: hidden; } */
+.search-box .list-search ul li { width: 100%; height: auto; margin-bottom: 10px; padding: 10px; overflow: hidden; position: relative; background-color: #f6f6f6; }
+.search-box .list-search ul li:last-child { margin-bottom: 10px; }
+.search-box .list-search ul li .list-search-l { float: left; width: 30%; }
+.search-box .list-search ul li .list-search-l img { width: 100%; height: 85px; }
+.search-box .list-search ul li .list-search-r { float: right; width: 70%; padding-left: 10px; }
+.search-box .list-search ul li .list-search-r h3 {font-size: 14px; }
+.search-box .list-search ul li .list-search-r h3 span { font-size: 12px; color: #999; margin-left: 10px; font-weight: 400; }
+.search-box .list-search ul li .list-search-r p {font-size: 12px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+.search-box .search-box-r { width: 30%;float: right; padding-left: 15px; }
+.search-box .search-box-rs { width: 100%; background-color: #f3f3f3; padding: 20px; overflow: hidden; }
+.search-box .search-box-rs ul li .list-search-l img { height: 115px; }
+.search-box .search-box-rs ul li .list-search-r h3 { font-size: 16px; }
+.search-box .search-box-rs ul li .list-search-r p { font-size: 12px; margin-top: 4px; }
+
+.income { width: 100%; margin-top: 20px; }
+.income img { max-width: 100%; }
+
+
+/* 预订列表页 */
+.Ktv_selector { width: 100%; border: 1px solid #00b8f5; padding: 15px 20px; overflow: hidden; margin: 10px 0 30px 0; }
+.Ktv_selector .ktv_selectorLine { width: 100%; overflow: hidden; }
+.Ktv_selector .ktv_selectorLine ul { width: 100%; line-height: 35px; }
+.Ktv_selector .ktv_selectorLine ul li { margin-right: 20px; font-size: 18px; float: left; }
+.Ktv_selector .ktv_selectorLine ul li a.active { color: #00b8f5;  }
+.search-box .list-search ul li .list-search-r button { position: absolute; right: 10px; font-size: 12px; top: 50%; margin-top: -14px; }
+
+.search-box .search-box-rs .list-search ul.am-list > li { margin-bottom: 15px; }
+.search-box .search-box-rs .list-search ul.am-list > li { background-color: transparent; border: none; padding: 5px 20px 0 20px;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.search-box .search-box-rs .list-search ul.am-list > li i { width: 25px; margin-right: 15px; height: 25px; display: inline-block; text-align: center; line-height: 25px; background-color: #0099e9; color: #fff; font-style: normal; }
+.search-box .search-box-rs .list-search ul.am-list > li:nth-child(1) i { background-color: #ff4541; }
+.search-box .search-box-rs .list-search ul.am-list > li:nth-child(2) i { background-color: #ff4541; }
+.search-box .search-box-rs .list-search ul.am-list > li:nth-child(3) i { background-color: #ff4541; }
+.search-box .search-box-rs .list-search ul.am-list > li a { padding: 0; font-size: 16px; display: inline; }
+
+
+/* 招聘列表页 */
+.jobs-list .search-box-ls ul li .list-search-l { width: 20%; }
+.jobs-list .search-box-ls ul li .list-search-r { width: 80%; }
+.jobs-list .list-search ul li .list-search-l img { height: 100px; }
+.jobs-list .list-search ul li .list-search-r p { margin-top: 13px; }
+.jobs-list .list-search ul li .list-search-r p e { margin-right: 10px; }
+
+.jobs-list .search-box-rs .list-search ul.am-list > li { padding-left: 0; padding-right: 0; }
+.jobs-list .search-box-rs .list-search ul.am-list > li p { height: 22px; line-height: 22px; }
+.jobs-list .search-box-rs .list-search ul.am-list > li p a { font-size: 14px; width: 225px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jobs-list .search-box-rs .list-search ul.am-list > li p e { font-size: 14px; float: right; }
+.jobs-list .search-box-rs .list-search ul.am-list > li p b { font-size: 14px; color: #ff4541; }
+.jobs-list .search-box-rs .list-search ul.am-list > li p span { font-size: 14px; }
+
+.jobs-money { position: absolute; right: 10px; bottom: 15px; text-align: right; }
+.jobs-money b { color: #ff4541; font-size: 14px; margin-bottom: 5px; display: inline-block; }
+/* .jobs-money e {  } */

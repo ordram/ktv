@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 布局、版面 */
+
+.yuerso_main { max-width: 640px; margin: 0 auto; position: relative; }
+
+
+
+/* 媒体查询 */
+
+@media only screen and (min-width: 641px){
+
+}
+
+
+@media only screen and (max-width: 420px){
+}
+
+
+@media only screen and (max-width: 380px){
+}
+
+
+@media only screen and (max-width: 370px){
+}
+
+
+/*  iphone 5  */
+@media only screen and (max-width: 330px){
+
+   header div.header-01 img { width: 55%; margin-top: 5px; }
+   header div.header-02 { width: 41%; padding: 0 10px; }
+   header div.header-03 { width: 24%; }
+
+   .ktv-jobs .ktv-jobs-content .am-form-horizontal ul.category li { margin-right: 10px; }
+
+   .search-box .search-title ul li { padding-right: 6.6%; font-size: 12px; }
+
+   .search-box .search-title ul li select { max-width: 60px; }
+
+}
+
+
+@media only screen and (min-width: 1000px){
+
+}
+
+/* 媒体查询 */
+

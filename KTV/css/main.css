@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+/*外边距为0，字体为12px*/
+body,ul,ol,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{padding:0px; margin:0px; font-size:12px; color: #666; }
+/*去掉li前面的点*/
+ol,ul,li{ list-style:none;}
+/*给图片加上样式重置*/
+img{ border:none;display:block}
+/*点击前的：去掉a链接下划线*/
+a{ text-decoration:none; color: #666; }
+/*IE下清除浮动*/
+.clearfloat{ zoom:1 }
+/*其他浏览器下清除浮动*/
+.clear:after { content:''; display:block; clear:both; }
+/*点击后的：去掉a链接下划线*/ 
+a:hover{ text-decoration: none; }
+
+/* 全局样式 */
+.am-breadcrumb-slash { margin: 15px 0 0 0; }
+.am-breadcrumb-slash li { font-size: 14px; }
+
+
+/* 首页样式 */
+
+/* 首页顶部样式 */
+.shortcut { width: 100%; height: auto; background-color: #fef9f0; overflow: hidden; border-bottom: 1px solid #c4c0b9; }
+.shortcut ul li { line-height: 40px; float: left; }
+.shortcut ul li e { display: inherit; line-height: 37px; }
+.shortcut .shortcut-l { float: left; }
+.shortcut .shortcut-l li { margin-right: 10px; }
+.shortcut .shortcut-l a i { color: #0099e9; font-weight: bold; font-style: normal; }
+.shortcut .shortcut-r { float: right; }
+.shortcut .shortcut-r li { margin-left: 10px; }
+
+header { padding-top: 25px; margin-bottom: 25px; overflow: hidden; }
+header div { float:  left; }
+header div.header-01 { width: 328px; }
+header div.header-02 { width: 550px; }
+header div.header-02 form { margin-left: 40px; }
+header div.header-02 form input { border: 2px solid #0099e9; border-top-left-radius: 5px; font-size: 18px; border-bottom-left-radius: 5px; padding: 0.7em 0.5em; width: 390px !important; }
+header div.header-02 form button { border: 2px solid #0099e9; background-color: #0099e9; font-size: 18px; color: #fff;border-top-right-radius: 5px;padding: 0.7em 1em; border-bottom-right-radius: 5px; }
+header div.header-02 form button:hover,header div.header-02 form button:focus { border: 2px solid #0099e9; background-color: #0099e9; color: #fff; }
+header div.header-03 { width: 320px; }
+header div.header-03 ul li { width: calc(100%/3 - 10px); text-align: center; line-height: 50px; float: left; }
+header div.header-03 ul li:nth-child(1){ background: url(../images/header-btn01.png) center center; margin-right: 15px; }
+header div.header-03 ul li:nth-child(1) a { color: #ffdf61; }
+header div.header-03 ul li:nth-child(2){ background: url(../images/header-btn02.png) center center; margin-right: 15px; }
+header div.header-03 ul li:nth-child(2) a { color: #31b4ff; }
+header div.header-03 ul li:nth-child(3){ background: url(../images/header-btn03.png) center center; }
+header div.header-03 ul li:nth-child(3) a { color: #ffb643; }
+header div.header-03 ul li a { font-size: 18px; display: block; }
+/* 首页顶部样式 */
+
+
+/* 导航 */
+.nav { width: 100%; background-color: #00b8f5; height: 50px; }
+.nav ul { width: 100%; }
+.nav ul li { float: left; line-height: 50px; height: 50px; position: relative; margin-right: 55px; }
+.nav ul li:last-child { margin-right: 0px; }
+.nav ul li a { width: 100%; text-align: center; color: #fff; font-size: 20px; }
+.nav ul li ul { position: absolute; left: 0; top: 50px; background-color: #3d95d5; margin: 0; z-index: 9; overflow: hidden; height: 0; }
+.nav ul li ul li { width: 100%; text-align: center; line-height: 50px; height: 50px; border-bottom: 1px solid #fff; }
+.nav ul li ul li:last-child { border-bottom: 0; }
+.nav ul li ul li a { color: #fff; font-size: 20px; }
+
+/* banner */
+.am-slider.am-slider-a1 .am-slides img { height: 500px; }
+
+/* 主体内容 */
+.ktv-conduct { width: 100%; }
+.kktv-conduct .conduct-title { width: 100%; }
+.ktv-conduct .conduct-title ul li { float: left; margin: 30px 80px 30px 0; }
+.ktv-conduct .conduct-title ul li a { font-size: 18px; display: inline; }
+.ktv-conduct .conduct-content ul li { margin-bottom: 20px; }
+.ktv-conduct .conduct-content ul li:last-child a:nth-child(1) img { width: 70%; float: left; padding-right: 30px; }
+.ktv-conduct .conduct-content ul li:last-child a:nth-child(2) img { width: 30%; float: left; }
+
+.list-club { width: 100%; }
+.list-club .club-title { width: 100%; margin: 30px 0 20px 0; overflow: hidden; }
+.list-club .club-title .club-title-l { float: left; display: flex; line-height: 36px; }
+.list-club .club-title .club-title-l i { background: url(../images/title-icon.png); width: 29px; height: 36px; display: block; }
+.list-club .club-title .club-title-l span { font-size: 24px; margin: 0 5px 0 15px; }
+.list-club .club-title .club-title-l e { font-size: 18px; padding-top: 10px; line-height: initial; }
+.list-club .club-title .club-title-r { float: right; line-height: 36px; }
+.list-club .club-title .club-title-r a { font-size: 16px; }
+.list-club .club-content ul li { position: relative; }
+.list-club .club-content ul li img.am-thumbnail { border: none; margin-bottom: 0; width: 100%; }
+.list-club .club-content ul li .club-content-box { width: calc(100% - 16px); position: absolute; left: 8px; bottom: 13px; padding: 4px 10px; background-color: rgba(0, 0, 0, 0.3); }
+.list-club .club-content ul li .club-content-box .club-content-box-l { width: 70%; float: left; }
+.list-club .club-content ul li .club-content-box .club-content-box-l p { color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.list-club .club-content ul li .club-content-box .club-content-box-r { width: 30%; float: left; line-height: 36px; text-align: right; }
+.list-club .club-content ul li .club-content-box .club-content-box-r .btn-place { padding: 5px 10px; background-color: #0099e9; color: #fff; border: none; }
+
+/* 招聘 */
+.ktv-jobs { width: 100%; }
+.ktv-jobs .ktv-jobs-title { width: 100%; height: auto; overflow: hidden; margin-top: 20px; }
+.ktv-jobs > ul > li:nth-child(2n+1) { padding-right: 8px; }
+.ktv-jobs > ul > li:nth-child(2n+2) { padding-left: 8px; }
+.ktv-jobs .ktv-jobs-title span { float: left; background-color: #0099e9; color: #fff; line-height: 36px; font-size: 22px; padding: 0 15px; }
+.ktv-jobs .ktv-jobs-title a { float: right; line-height: 36px; font-size: 16px; }
+.ktv-jobs .ktv-jobs-content { border: 1px solid #0099e9; background-color: #fef9f0; height: 407px; }
+.ktv-jobs .ktv-jobs-content .am-list { margin-bottom: 15px; }
+.ktv-jobs .ktv-jobs-content .am-list > li { background-color: transparent; border: none; padding: 15px 20px 0 20px;  }
+.ktv-jobs .ktv-jobs-content .am-list > li i { width: 25px; margin-right: 15px; height: 25px; display: inline-block; text-align: center; line-height: 25px; background-color: #0099e9; color: #fff; font-style: normal; }
+.ktv-jobs .ktv-jobs-content .am-list > li:nth-child(1) i { background-color: #ff4541; }
+.ktv-jobs .ktv-jobs-content .am-list > li:nth-child(2) i { background-color: #ff4541; }
+.ktv-jobs .ktv-jobs-content .am-list > li:nth-child(3) i { background-color: #ff4541; }
+.ktv-jobs .ktv-jobs-content .am-list > li a { padding: 0; font-size: 16px; display: inline; }
+.ktv-jobs .ktv-jobs-content .am-list > li span { float: right; font-size: 16px; }
+.ktv-jobs .ktv-jobs-content .am-slider { margin: 20px; }
+.ktv-jobs .ktv-jobs-content .am-slider .am-slides img { height: 148px; }
+.ktv-jobs .ktv-jobs-content .evening { height: auto; }
+
+/* 黑金VIP */
+.ktv-vip { width: 100%; height: auto; margin: 40px 0; }
+.ktv-vip .am-u-sm-2 { text-align: center; }
+.ktv-vip .am-u-sm-2 img { margin: 0 auto; }
+.ktv-vip .am-u-sm-2 p { font-size: 16px; line-height: 32px; }
+.ktv-vip .am-u-sm-10 ul li { float: left; margin-right: 23px; font-size: 16px; line-height: 30px; }
+
+/* 周边城市 */
+.links { margin-bottom: 40px; }
+.links p { margin-bottom: 10px; font-size: 16px; }
+.links p a { margin-right: 10px; }
+
+/* footer */
+.footer { width: 100%; height: auto; padding: 30px 0; overflow: hidden; background-color: #023851; }
+.footer .footer-list ul {  width: 678px; margin: 0 auto; }
+.footer .footer-list ul li { float: left;  }
+.footer .footer-list ul li a { color: #fff; font-size: 16px; }
+.footer p { color: #fff; font-size: 16px; width: 100%; text-align: center; margin-top: 10px; }
+

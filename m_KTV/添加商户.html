@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>添加商户</title>
+  <link href="./css/amazeui.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/master.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/release.css" rel="stylesheet" type="text/css">
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="yuerso_main">
+
+    <!-- header -->
+    <header class="header">
+      <div class="header-01">
+        <a href="#"><img src="./images/logo.png" /></a>
+        <div class="am-form-group">
+          <select id="doc-select-1">
+            <option value="option1">武汉</option>
+            <option value="option2">杭州</option>
+            <option value="option3">南京</option>
+          </select>
+          <span class="am-form-caret"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主体内容 -->
+    <div class="clear"></div>
+    <div class="wrap">
+      <div class="ktv-jobs">
+        <div class="ktv-jobs-content">
+          <form class="am-form am-form-horizontal">
+            <fieldset>
+              
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>商户名称</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入商户名称">
+                </div>
+              </div>
+              
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>预订热线</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入预订热线">
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>详细地址</label>
+                <div class="am-u-sm-3">
+                  <select id="doc-select-1">
+                    <option value="请选择省份">选择省份</option>
+                    <option value="湖南">湖南</option>
+                    <option value="湖北">湖北</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+                <div class="am-u-sm-3">
+                  <select id="doc-select-1">
+                    <option value="请选择城市">选择城市</option>
+                    <option value="武汉">武汉</option>
+                    <option value="长沙">长沙</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+                <div class="am-u-sm-3">
+                  <select id="doc-select-1">
+                    <option value="请选择区域">选择区域</option>
+                    <option value="汉口">汉口</option>
+                    <option value="武昌">武昌</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>最低消费</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2">
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>营业时间</label>
+                <div class="am-u-sm-4">
+                  <select id="doc-select-1">
+                    <option value="开始时间">开始时间</option>
+                    <option value="7:00">7:00</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+                <div class="am-u-sm-4">
+                  <select id="doc-select-1">
+                    <option value="结束时间">结束时间</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                  </select>
+                  <span class="am-form-caret"></span>
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>开业时间</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="my-startDate" data-am-datepicker readonly required />
+                </div>
+                <div class="am-u-sm-5">
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>包间类型</label>
+                <div class="am-u-sm-9">
+                  <div class="Promotion-box">
+                    <ul class="room">
+                      <li><a href="javascript:;" class="active">普通小包</a></li>
+                      <li><a href="javascript:;">普通中包</a></li>
+                      <li><a href="javascript:;">普通大包</a></li>
+                      <li><e>* 任选其一</e></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>商家简介</label>
+                <div class="am-u-sm-9">
+                  <textarea class="" rows="8" id="doc-ta-1" placeholder="10-2000个字"></textarea>
+                </div>
+              </div>
+  
+              <br/>
+  
+              <p><button type="button" class="am-btn am-btn-primary am-btn-block">立即添加</button></p>
+  
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="clear"></div>
+        <p>版权所有：武汉浩冉文化传播有限公司</p>
+        <p>@CopyRight 2018 鄂 ICP 备 15004710 号-1</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="./js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/amazeui.widgets.helper.min.js"></script>
+  <script src="./js/handlebars.min.js"></script>
+  <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

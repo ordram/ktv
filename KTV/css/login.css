@@ -1,0 +1,27 @@
+/* 登录注册页面 */
+
+.header { position: relative; }
+.header .header-landing { float: right; bottom: 0; right: 0; position: absolute; }
+.header .header-landing ul { overflow: hidden; }
+.header .header-landing ul li { float: left; margin-left: 10px; font-size: 14px; }
+.header .header-landing ul li e { display: inherit; line-height: 20px; }
+.header .header-landing ul li a i { color: #0099e9; font-style: normal; }
+
+
+.landing { width: 100%; height: auto; background: url(../images/landing.jpg) center center no-repeat; background-size: cover; padding: 30px 0; color: #fff;  }
+.landing .am-panel { width: 450px; padding: 20px 0; border-radius: 10px; float: right; margin: 0 90px 0 0; background-color: rgba(0, 0, 0, 0.5); border: none; }
+.landing .am-panel h3 { width: 100%; text-align: center; font-size: 27px; color: #00b8f5; }
+.landing .am-panel p { width: 100%; color: #fff; font-size: 14px; margin-bottom: 25px; }
+.landing .am-panel a { color: #fff; }
+.landing .am-panel a.am-icon-btn { color: #615b57; font-size: 16px; width: 30px; height: 30px; line-height: 30px; margin-right: 10px; }
+.landing .am-panel label { color: #fff; }
+.landing .am-panel .am-checkbox { margin: 10px 0 0 0; }
+.landing .am-panel .am-panel-bd { padding: 30px 60px 0; }
+.landing .am-panel .am-panel-bd input { margin-bottom: 30px; border-color: #d2d2d2; padding: 12px 10px; border-radius: 5px !important; }
+.landing .am-panel .am-panel-bd .am-form-set { margin-bottom: 0; }
+.am-btn-primary,.am-btn-primary:focus,.am-btn-primary:hover { margin-bottom: 15px; border-radius: 5px; padding: 10px 0; font-size: 26px; background-color: #00b8f5; border-color: #00b8f5; }
+
+/* 底部颜色 */
+.footer { background-color: #fff; }
+.footer p { color: #999; }
+.footer .footer-list ul li a { color: #999; }
