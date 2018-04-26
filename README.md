@@ -30,8 +30,6 @@
 
 ### 作者
 
-&nbsp;&nbsp;&nbsp;<div style="width:100px;">![ordram](https://ordram.github.io/dazhuang/img/avatars/head.jpg "Avatar")</div>
-<br>
 &nbsp;&nbsp;&nbsp;我的主页：[我的主页](https://ordram.github.io/ordram/)
 <br>
 &nbsp;&nbsp;&nbsp;我的简介：[我的简介](https://ordram.github.io/dazhuang/)
