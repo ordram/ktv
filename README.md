@@ -26,9 +26,13 @@
 
 ### 项目时间
 
-&nbsp;&nbsp;&nbsp;&nbsp;2018年4月
+&nbsp;&nbsp;&nbsp;时间：[2018年4月](https://www.baidu.com/s?wd=%E6%97%A5%E6%9C%9F)
 
 ### 作者
 
-&nbsp;&nbsp;&nbsp;&nbsp;[我的主页](https://ordram.github.io/ordram/)
-&nbsp;&nbsp;&nbsp;&nbsp;[我的简介](https://ordram.github.io/dazhuang/)
+[![ordram]](https://ordram.github.io/ordram/)  
+[ordram]:https://ordram.github.io/dazhuang/img/avatars/head.jpg"Avatar"
+<br>
+&nbsp;&nbsp;&nbsp;我的主页：[我的主页](https://ordram.github.io/ordram/)
+<br>
+&nbsp;&nbsp;&nbsp;我的简介：[我的简介](https://ordram.github.io/dazhuang/)
