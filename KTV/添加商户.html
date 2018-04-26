@@ -307,7 +307,7 @@
             <div class="am-form-group">
               <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary">*</i>商家简介</label>
               <div class="am-u-sm-6">
-                <textarea name="content" rows="8" id="editor_id" placeholder="10-2000个字"></textarea>
+                <textarea name="bcontent" rows="8" id="editor_id" placeholder="10-2000个字"></textarea>
               </div>
               <div class="am-u-sm-5">
               </div>
@@ -426,8 +426,15 @@
   <script charset="utf-8" src="./editor/kindeditor-all.js"></script>
   <script charset="utf-8" src="./js/zh-CN.js"></script>
   <script>
+    var editor;
     KindEditor.ready(function(K) {
       window.editor = K.create('#editor_id');
+      editor = K.create('textarea[name="bcontent"]', {
+        allowFileManager : true
+      });
+      $('button.am-btn-primary').click(function(){
+        alert(editor.html());
+      })
     });
   </script>
 
