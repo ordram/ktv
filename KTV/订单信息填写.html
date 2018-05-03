@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>订单信息填写</title>
+  <link href="./css/amazeui.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/master.css" rel="stylesheet" type="text/css">
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/release.css" rel="stylesheet" type="text/css">
+  <style>
+   .am-u-sm-7 p{line-height:37px;}
+  </style>
+  
+</head>
+
+<body>
+  <!-- shortcut -->
+  <div class="shortcut">
+    <div class="wrap">
+      <ul class="shortcut-l">
+        <li>
+          <a href="#">
+            <i>武汉</i> [切换城市]</a>
+        </li>
+        <li>
+          <a href="#">黄冈</a>
+        </li>
+        <li>
+          <a href="#">孝感</a>
+        </li>
+        <li>
+          <a href="#">仙桃</a>
+        </li>
+        <li>
+          <a href="#">全国</a>
+        </li>
+        <li>
+          <e>|</e>
+        </li>
+        <li>
+          <a href="#">手机端</a>
+        </li>
+      </ul>
+      <ul class="shortcut-r">
+        <li>
+          <a href="#">登录/注册</a>
+        </li>
+        <li>
+          <a href="#">忘记密码?</a>
+        </li>
+        <li>
+          <a href="#">发布须知</a>
+        </li>
+        <li>
+          <a href="#">免费发布消息</a>
+        </li>
+        <li>
+          <a href="#">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div class="wrap">
+    <header class="header">
+      <div class="header-01">
+        <a href="#"><img src="./images/logo.png" /></a>
+      </div>
+      <div class="header-02">
+        <form class="am-form-inline" role="form">
+          <div class="am-form-group">
+            <input type="search" class="am-form-field" placeholder="搜索">
+          </div>
+          <button type="submit" class="am-btn am-btn-default">搜索</button>
+        </form>
+      </div>
+      <div class="header-03">
+        <ul>
+          <li>
+            <a href="#">VIP会员</a>
+          </li>
+          <li>
+            <a href="#">商户合作</a>
+          </li>
+          <li>
+            <a href="#">添加商户</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <!-- 导航 -->
+  <div class="clear"></div>
+  <div class="nav">
+    <div class="wrap">
+      <ul>
+        <li>
+          <a href="#">
+            首页
+          </a>
+        </li>
+        <li>
+          <a href="#">会所/夜总会</a>
+          <!-- <ul>
+            <li><a href="#">夜总会</a></li>
+            <li><a href="#">会所</a></li>
+          </ul> -->
+        </li>
+        <li>
+          <a href="#">酒吧/清吧</a>
+        </li>
+        <li>
+          <a href="#">量贩式KTV</a>
+        </li>
+        <li>
+          <a href="#">武汉夜场招聘</a>
+        </li>
+        <li>
+          <a href="#">武汉夜场预定 </a>
+        </li>
+        <li>
+          <a href="#">武汉夜场活动</a>
+        </li>
+        <li>
+          <a href="#">武汉夜场资讯</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 主体内容 -->
+  <div class="wrap">
+
+    <!-- 路径导航 -->
+    <div class="clear"></div>
+    <ol class="am-breadcrumb am-breadcrumb-slash">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">分类</a></li>
+      <li class="am-active">内容</li>
+    </ol>
+
+    <div class="ktv-jobs">
+      <div class="ktv-jobs-title">
+        <span>订单信息填写</span>
+      </div>
+      <div class="ktv-jobs-content">
+        <form class="am-form am-form-horizontal">
+          <fieldset>
+            
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary">*</i>到店日期</label>
+              <div class="am-u-sm-4">
+                <input type="text" id="my-startDate" data-am-datepicker readonly required />
+              </div>
+              <div class="am-u-sm-7">
+                <p><i class="am-icon-warning am-icon-fl"></i>  我们为您将包间保留至您选定的日期。</p>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary">*</i>包间保留至</label>
+              <div class="am-u-sm-3">
+                <select id="doc-select-1">
+                  <option value="7:00">23:59</option>
+                  <option value="8:00">23:30</option>
+                  <option value="9:00">23:00</option>
+                  <option value="10:00">22:30</option>
+                  <option value="10:00">22:00</option>
+                  <option value="10:00">21:30</option>
+                  <option value="10:00">21:00</option>
+                </select>
+                <span class="am-form-caret"></span>
+              </div>
+              <div class="am-u-sm-8">
+                <p style="line-height:37px;"><i class="am-icon-warning am-icon-fl"></i>  我们为您将包间保留至您选定的时间。</p>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary">*</i>联系人</label>
+              <div class="am-u-sm-4">
+                <input type="text" id="doc-ipt-2">
+              </div>
+              <div class="am-u-sm-7">
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary">*</i>手机号码</label>
+              <div class="am-u-sm-4">
+                <input type="text" id="doc-ipt-2">
+              </div>
+              <div class="am-u-sm-7">
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary"></i>邮箱</label>
+              <div class="am-u-sm-4">
+                <input type="text" id="doc-ipt-2">
+              </div>
+              <div class="am-u-sm-7">
+                <p>（选填）</p>
+              </div>
+            </div>
+
+            <div class="am-form-group">
+              <label for="doc-ipt-2" class="am-u-sm-1 am-form-label"><i class="necessary"></i>特殊要求</label>
+              <div class="am-u-sm-4">
+                <input type="text" id="doc-ipt-2">
+              </div>
+              <div class="am-u-sm-7">
+                <p><i class="am-icon-warning am-icon-fl"></i>  请注意我们无法担保客人的特殊要求，特殊要求是否能满足取决于商家自身条件。</p>
+              </div>
+            </div>
+
+            <br/>
+
+            <p style="margin-left: 20px;"><button type="button" class="am-btn am-btn-primary">确认提交</button></p>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <!-- 黑金VIP -->
+    <div class="ktv-vip">
+      <div class="am-g">
+        <div class="am-u-sm-2">
+          <img src="./images/vip.png" />
+          <p>黑金VIP</p>
+        </div>
+        <div class="am-u-sm-10">
+          <ul>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+            <li><a href="#">肥猫科技</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- links -->
+    <div class="links">
+      <p>周边城市：<a href="#">鄂州</a><a href="#">恩施</a><a href="#">黄冈</a><a href="#">黄石</a><a href="#">荆门</a><a href="#">荆州</a><a href="#">潜江</a><a href="#">神农架</a><a href="#">十堰</a></p>
+      <p>热门城市：<a href="#">北京</a><a href="#">上海</a><a href="#">深圳</a><a href="#">广州</a><a href="#">重庆</a><a href="#">杭州</a><a href="#">成都</a><a href="#">天津</a><a href="#">苏州</a></p>
+      <p>友情链接：<a href="#">武汉赶集网</a><a href="#">武汉58同城</a><a href="#">武汉百姓网</a><a href="#">武汉列表网</a><a href="#">武汉分类信息</a><a href="#">武汉智联招聘</a></p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">帮助中心&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">关于我们&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">联系我们&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">广告赞助&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">用户协议&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">禁止性内容&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">网站简介&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">招贤纳士</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <p>版权所有：武汉浩冉文化传播有限公司 @CopyRight 2018 鄂 ICP 备 15004710 号-1</p>
+      <p>Ktv 预订网 地址：湖北省武汉市汉阳区 联系电话：17771788686</p>
+      <p>免责声明：本站所有信息及图片内容均来自互联网，请自行辨别，本站不对信息的真实性负任何责任</p>
+    </div>
+  </footer>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="./js/jquery-1.11.1.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="./js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script src="./js/amazeui.min.js"></script>
+  <script src="./js/amazeui.widgets.helper.min.js"></script>
+  <script src="./js/handlebars.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(function() {
+
+      /**
+       * 
+       * 获取当前时间
+       */
+      function p(s) {
+          return s < 10 ? '0' + s: s;
+      }
+
+      var myDate = new Date();
+      //获取当前年
+      var year=myDate.getFullYear();
+      //获取当前月
+      var month=myDate.getMonth()+1;
+      //获取当前日
+      var date=myDate.getDate();
+
+      var MystartDate = year+'-'+p(month)+"-"+p(date);
+
+      $('#my-startDate').val(MystartDate);
+
+    });
+    </script>
+
+</body>
+
+</html>
