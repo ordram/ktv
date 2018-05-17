@@ -127,3 +127,8 @@
 .jobs-show .Booking-box-r .jobs-list-bottom ul li a { color: #27a1d3; display: inline-block; width: 184px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  }
 
 
+.banner { width: 100%; overflow: hidden; }
+.banner img { width: 100%; }
+
+.page { padding-top: 15px; }
+.page p { line-height: 25px; font-size: 14px; }
