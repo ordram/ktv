@@ -10,6 +10,14 @@
   <link href="./css/main.css" rel="stylesheet" type="text/css">
   <link href="./css/master.css" rel="stylesheet" type="text/css">
   <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <style>
+    .city-box ul {width: 100%; overflow: hidden; background-color: #fff; text-align: center; }
+    .city-box ul li {width: 33.33%; border: 1px solid #ddd; float: left; }
+    .city-box ul li a {width: 100%; line-height: 38px; display: block; }
+    .city-box ul li:nth-child(3n+1) { border-top: none; border-left: none; }
+    .city-box ul li:nth-child(3n+2) { border-top: none; border-left: none; border-right: none; }
+    .city-box ul li:nth-child(3n+3) { border-top: none; border-right: none; }
+  </style>
 </head>
 
 <body>
@@ -64,35 +72,66 @@
           <div class="city-title">
             <h3>热门城市</h3>
           </div>
-          <table class="am-table am-table-bordered">
-            <tr>
-              <td><a href="#">北京</a></td>
-              <td><a href="#">苏州</a></td>
-              <td><a href="#">杭州</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">武汉</a></td>
-              <td><a href="#">南京</a></td>
-              <td><a href="#">上海</a></td>
-            </tr>
-          </table>
+          <ul>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">苏州</a></li>
+            <li><a href="#">杭州</a></li>
+            <li><a href="#">武汉</a></li>
+            <li><a href="#">南京</a></li>
+            <li><a href="#">上海</a></li>
+          </ul>
         </div>
         <div class="city-box">
           <div class="city-title">
-            <h3>按省/直辖市来查找</h3>
+            <h3>直辖市</h3>
           </div>
-          <table class="am-table am-table-bordered">
-            <tr>
-              <td><a href="#">全国</a></td>
-              <td><a href="#">北京</a></td>
-              <td><a href="#">上海</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">天津</a></td>
-              <td><a href="#">重庆</a></td>
-              <td><a href="#">河北</a></td>
-            </tr>
-          </table>
+          <ul>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">上海</a></li>
+            <li><a href="#">天津</a></li>
+            <li><a href="#">重庆</a></li>
+          </ul>
+        </div>
+        <div class="city-box">
+          <div class="city-title">
+            <h3>湖北省</h3>
+          </div>
+          <ul>
+            <li><a href="#">武汉市</a></li>
+            <li><a href="#">黄石市</a></li>
+            <li><a href="#">十堰市</a></li>
+            <li><a href="#">宜昌市</a></li>
+            <li><a href="#">襄阳市</a></li>
+          </ul>
+        </div>
+        <div class="city-box">
+          <div class="city-title">
+            <h3>湖北省</h3>
+          </div>
+          <ul>
+            <li><a href="#">武汉市</a></li>
+            <li><a href="#">黄石市</a></li>
+            <li><a href="#">十堰市</a></li>
+            <li><a href="#">宜昌市</a></li>
+            <li><a href="#">襄阳市</a></li>
+            <li><a href="#">襄阳市</a></li>
+            <li><a href="#">襄阳市</a></li>
+          </ul>
+        </div>
+        <div class="city-box">
+          <div class="city-title">
+            <h3>湖北省</h3>
+          </div>
+          <ul>
+            <li><a href="#">武汉市</a></li>
+            <li><a href="#">黄石市</a></li>
+            <li><a href="#">十堰市</a></li>
+            <li><a href="#">宜昌市</a></li>
+            <li><a href="#">襄阳市</a></li>
+            <li><a href="#">襄阳市</a></li>
+            <li><a href="#">襄阳市</a></li>
+            <li><a href="#">襄阳市</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -119,7 +158,26 @@
   <script src="./js/amazeui.widgets.helper.min.js"></script>
   <script src="./js/handlebars.min.js"></script>
   <script src="./js/main.js"></script>
-
+  <script>
+    $(function(){
+      $('.city-box ul').each(function(){
+        var that = $(this);
+        var num = that.find('li').length;
+        var textNum = num%3;
+        if(textNum == 0){
+          that.find('li').eq(-1).css({ 'border-bottom':'none' })
+          that.find('li').eq(-2).css({ 'border-bottom':'none' })
+          that.find('li').eq(-3).css({ 'border-bottom':'none' })
+        }else if(textNum == 2){
+          that.find('li').eq(-1).css({ 'border-bottom':'none','border-right':'1px solid #ddd','box-sizing':'content-box' })
+          that.find('li').eq(-2).css({ 'border-bottom':'none' })
+        }else if(textNum == 1){
+          that.find('li').eq(-1).css({ 'border-bottom':'none' })
+        }
+      })
+      
+    })
+  </script>
 
 
 </body>

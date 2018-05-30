@@ -11,6 +11,26 @@
   <link href="./css/main.css" rel="stylesheet" type="text/css">
   <link href="./css/release.css" rel="stylesheet" type="text/css">
   <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <style>
+    .Promotion-box .am-u-sm-4 { padding-left:0; }
+    .Promotion-box .am-u-sm-2 { padding-left:0; }
+    .Promotion-box .am-u-sm-4 p {font-size: 12px;line-height: 28px; text-align: center; }
+    .Promotion-box div.am-u-sm-4 { padding-right: 10px !important; }
+    .Promotion-box div.am-u-sm-4:last-child { padding-right: 0 !important; }
+    .active .Promotion-box { margin-bottom: 15px; }
+    .active .Promotion-box:last-child { margin-bottom: 0; }
+    .plusAdd { margin-top: 8px; overflow: hidden; }
+    .plusAdd span { cursor: pointer; }
+    .plusAdd span.am-icon-trash { display: none; }
+
+    .am-u-sm-9 input[type=file] { position: absolute;top: 0;opacity: 0;cursor: pointer;font-size: 50rem; }
+
+    .ktv-jobs .ktv-jobs-content .am-form-horizontal .upload-imgs { width: 100%; height: auto; overflow: hidden; }
+    .ktv-jobs .ktv-jobs-content .am-form-horizontal .upload-imgs li { width: calc(100%/3 - 10px); position: relative; float: left; height: auto; overflow: hidden; margin: 15px 15px 0 0; }
+    .ktv-jobs .ktv-jobs-content .am-form-horizontal .upload-imgs li:nth-child(3n+3) { margin-right: 0px; }
+    .ktv-jobs .ktv-jobs-content .am-form-horizontal .upload-imgs li img { width: 100%; }
+    .ktv-jobs .ktv-jobs-content .am-form-horizontal .upload-imgs li span { position: absolute; right: 3px; top: 3px; color:#666; opacity: 0.5; cursor: pointer; font-size: 10px; }
+  </style>
 </head>
 
 <body>
@@ -38,23 +58,53 @@
         <div class="ktv-jobs-content">
           <form class="am-form am-form-horizontal">
             <fieldset>
-              
+
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>商户名称</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 商户类别</label>
                 <div class="am-u-sm-9">
-                  <input type="text" id="doc-ipt-2" placeholder="输入商户名称">
+                  <select id="doc-select-1">
+                    <option value="请选择商户类别">选择商户类别</option>
+                    <option value="会所/夜总会">会所/夜总会</option>
+                    <option value="酒吧/清吧">酒吧/清吧</option>
+                    <option value="量贩式KTV">量贩式KTV</option>
+                  </select>
+                  <span class="am-form-caret"></span>
                 </div>
               </div>
               
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>预订热线</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 商户名称</label>
+                <div class="am-u-sm-9">
+                  <input type="text" id="doc-ipt-2" placeholder="输入商户名称">
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 店面图</label>
+                <div class="am-u-sm-9">
+                  <div class="upload-img">
+                    <button type="button" class="am-btn am-btn-default am-btn-sm" style="font-size: 12px;">
+                      <i class="am-icon-cloud-upload"></i> 选择要上传的图片</button>
+                    <span>上传的图片不能包含有文字、数字、网址、名片等，最多上传<e>8</e>张，每张最大<e>10M</e></span>
+                  </div>
+                  <input type="file" id="doc-ipt-file-2" style="height:28px;z-index:0;left:0;width:138px;overflow: hidden;">
+                  <ul class="upload-imgs">
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 预订热线</label>
                 <div class="am-u-sm-9">
                   <input type="text" id="doc-ipt-2" placeholder="输入预订热线">
                 </div>
               </div>
   
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>详细地址</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 省市区</label>
                 <div class="am-u-sm-3">
                   <select id="doc-select-1">
                     <option value="请选择省份">选择省份</option>
@@ -80,16 +130,65 @@
                   <span class="am-form-caret"></span>
                 </div>
               </div>
-  
+
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>最低消费</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 详细地址</label>
                 <div class="am-u-sm-9">
-                  <input type="text" id="doc-ipt-2">
+                  <input type="text" id="doc-ipt-2" placeholder="输入详细地址">
                 </div>
               </div>
   
+              <div class="am-form-group compart">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 包间类型</label>
+                <div class="am-u-sm-9">
+                  <div class="active">
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><p>普通小包</p></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="容纳人数"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最低消费"></div>
+                    </div>
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><p>普通中包</p></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="容纳人数"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最低消费"></div>
+                    </div>
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><p>普通大包</p></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="容纳人数"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最低消费"></div>
+                    </div>
+                  </div>
+                  <p class="plusAdd"><span class="am-icon-trash am-icon-md am-fl"></span><span class="am-icon-plus-square am-icon-md am-fr" style="font-size: 10px;"></span></p>
+                </div>
+              </div>
+
+              <div class="am-form-group drinks">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 酒水价格</label>
+                <div class="am-u-sm-9">
+                  <div class="active">
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水名称"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水价格"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最新优惠"></div>
+                    </div>
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水名称"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水价格"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最新优惠"></div>
+                    </div>
+                    <div class="am-g Promotion-box">
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水名称"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水价格"></div>
+                      <div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最新优惠"></div>
+                    </div>
+                  </div>
+                  <p class="plusAdd"><span class="am-icon-trash am-icon-md am-fl"></span><span class="am-icon-plus-square am-icon-md am-fr" style="font-size: 10px;"></span></p>
+                </div>
+              </div>
+  
+  
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>营业时间</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 营业时间</label>
                 <div class="am-u-sm-4">
                   <select id="doc-select-1">
                     <option value="开始时间">开始时间</option>
@@ -113,32 +212,35 @@
               </div>
   
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>开业时间</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 开业时间</label>
                 <div class="am-u-sm-9">
                   <input type="text" id="my-startDate" data-am-datepicker readonly required />
                 </div>
                 <div class="am-u-sm-5">
                 </div>
               </div>
-  
+
               <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>包间类型</label>
-                <div class="am-u-sm-9">
-                  <div class="Promotion-box">
-                    <ul class="room">
-                      <li><a href="javascript:;" class="active">普通小包</a></li>
-                      <li><a href="javascript:;">普通中包</a></li>
-                      <li><a href="javascript:;">普通大包</a></li>
-                      <li><e>* 任选其一</e></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="am-form-group">
-                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i>商家简介</label>
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 商家简介</label>
                 <div class="am-u-sm-9">
                   <textarea class="" rows="8" id="doc-ta-1" placeholder="10-2000个字"></textarea>
+                </div>
+              </div>
+
+              <div class="am-form-group">
+                <label for="doc-ipt-2" class="am-u-sm-3 am-form-label"><i class="necessary">*</i> 公司详图</label>
+                <div class="am-u-sm-9">
+                  <div class="upload-img">
+                    <button type="button" class="am-btn am-btn-default am-btn-sm" style="font-size: 12px;">
+                      <i class="am-icon-cloud-upload"></i> 选择要上传的图片</button>
+                    <span>上传的图片不能包含有文字、数字、网址、名片等，最多上传<e>8</e>张，每张最大<e>10M</e></span>
+                  </div>
+                  <input type="file" id="doc-ipt-file-2" style="height:28px;z-index:0;left:0;width:138px;overflow: hidden;">
+                  <ul class="upload-imgs">
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                    <li><img src="https://placehold.jp/450x450.png" /><span class="am-icon-trash am-icon-md"></span></li>
+                  </ul>
                 </div>
               </div>
   
@@ -174,8 +276,6 @@
   <script src="./js/amazeui.widgets.helper.min.js"></script>
   <script src="./js/handlebars.min.js"></script>
   <script src="./js/main.js"></script>
-
-
 
 </body>
 

@@ -94,4 +94,54 @@ $(function(){
 
   })
 
+
+  // 修改
+  var txt1='<div class="am-g Promotion-box"><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="包间类型"></div><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="容纳人数"></div><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最低消费"></div></div>'
+  var txt2='<div class="am-g Promotion-box"><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水名称"></div><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="酒水价格"></div><div class="am-u-sm-4"><input type="text" id="doc-ipt-2" placeholder="最新优惠"></div></div>'
+  
+  $('.compart .plusAdd span.am-icon-plus-square').click(function(){
+    $('.compart .am-u-sm-9 > .active').append(txt1);
+    var numAdd = $('.compart .am-u-sm-9 > .active > div.Promotion-box').length;
+    if(numAdd >= 4){
+      $('.compart .plusAdd span.am-icon-trash').css({'display':'block'})
+    }else if(numAdd < 4)(
+      $('.compart .plusAdd span.am-icon-trash').css({'display':'none'})
+    )
+
+  })
+
+  $('.compart .plusAdd span.am-icon-trash').click(function(){
+    $('.compart .am-u-sm-9 > .active > div.Promotion-box').eq(-1).remove();
+    
+    var numAdd = $('.compart .am-u-sm-9 > .active > div.Promotion-box').length;
+    if(numAdd >= 4){
+      $('.compart .plusAdd span.am-icon-trash').css({'display':'block'})
+    }else if(numAdd < 4)(
+      $('.compart .plusAdd span.am-icon-trash').css({'display':'none'})
+    )
+
+  })
+
+  $('.drinks .plusAdd span.am-icon-plus-square').click(function(){
+    $('.drinks .am-u-sm-9 > .active').append(txt2);
+    var numAdd = $('.drinks .am-u-sm-9 > .active > div.Promotion-box').length;
+    if(numAdd >= 4){
+      $('.drinks .plusAdd span.am-icon-trash').css({'display':'block'})
+    }else if(numAdd < 4)(
+      $('.drinks .plusAdd span.am-icon-trash').css({'display':'none'})
+    )
+
+  })
+
+  $('.drinks .plusAdd span.am-icon-trash').click(function(){
+    $('.drinks .am-u-sm-9 > .active > div.Promotion-box').eq(-1).remove();
+    var numAdd = $('.drinks .am-u-sm-9 > .active > div.Promotion-box').length;
+    if(numAdd >= 4){
+      $('.drinks .plusAdd span.am-icon-trash').css({'display':'block'})
+    }else if(numAdd < 4)(
+      $('.drinks .plusAdd span.am-icon-trash').css({'display':'none'})
+    )
+
+  })
+
 })

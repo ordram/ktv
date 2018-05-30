@@ -111,5 +111,16 @@ $(function(){
 
   })
 
+  // 侧边栏联系方式
+  $('.contact-us ul li').each(function(){
+    var that = $(this);
+    that.hover(function(){
+      that.find('.contact-box').stop().animate({ width : 150 })
+      that.find('.contact-box.marker').stop().animate({ width : 240 })
+    },function(){
+      that.find('.contact-box').stop().animate({ width : 0 })
+    })
+  })
+
   
 })
